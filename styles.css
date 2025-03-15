@@ -1,0 +1,1181 @@
+/* General Styles */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.whatsapp-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+    .logo-img {
+      width: 100px;  /* Adjust size as needed */
+      height: 100px; /* Keep it equal for a perfect circle */
+      border-radius: 100%; /* Makes the image round */
+      object-fit: cover; /* Ensures the image is properly cropped */
+    }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header .language-selector select {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+    background: #f4f4f4;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .cta-button {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .hero img {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 60px 0;
+    background: #fff;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  footer .contact-info p {
+    margin: 5px 0;
+  }
+  
+  footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  /* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar nav ul li a.active {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 30px;
+    background: #f0f2f5;
+  }
+  
+  /* User Profile Section */
+  .user-profile {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #007BFF;
+  }
+  
+  .user-profile p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .user-profile .balance {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .quick-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .quick-actions button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .quick-actions button:hover {
+    background: #0056b3;
+  }
+  
+  /* Financial Tools Section */
+  .financial-tools {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .financial-tools h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .tool-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tool-card i {
+    font-size: 32px;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .tool-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .tool-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  /* Wallet Balance Section */
+.wallet-balance {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wallet-balance h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .balance-display {
+    text-align: center;
+  }
+  
+  .balance-display p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .balance-display h3 {
+    font-size: 36px;
+    color: #28a745;
+    margin: 10px 0;
+  }
+  
+  .wallet-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .wallet-actions button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .wallet-actions button:hover {
+    background: #0056b3;
+  }
+  
+  /* Transaction History Section */
+  .transaction-history {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-history h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  table td {
+    font-size: 14px;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .status.success {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .status.pending {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  /* Expense Tracking Section */
+  .expense-tracking {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .expense-tracking h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .expense-chart {
+    text-align: center;
+  }
+  
+  .expense-chart img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* Startup Showcase Section */
+.startup-showcase {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .startup-showcase h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .startup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .startup-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .startup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .startup-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .startup-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .funding-progress {
+    margin-bottom: 15px;
+  }
+  
+  .funding-progress p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .progress-bar {
+    background: #e9ecef;
+    border-radius: 10px;
+    height: 10px;
+    margin: 10px 0;
+  }
+  
+  .progress-bar .progress {
+    background: #28a745;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .startup-card button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .startup-card button:hover {
+    background: #0056b3;
+  }
+  
+  /* Investor Dashboard Section */
+  .investor-dashboard {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investor-dashboard h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .investor-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .investor-dashboard th, .investor-dashboard td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .investor-dashboard th {
+    background: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .investor-dashboard td {
+    font-size: 14px;
+  }
+  
+  .investor-dashboard button {
+    padding: 8px 16px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .investor-dashboard button:hover {
+    background: #218838;
+  }
+  
+  /* Blockchain Transparency Section */
+  .blockchain-transparency {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blockchain-transparency h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .blockchain-info {
+    text-align: center;
+  }
+  
+  .blockchain-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .blockchain-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* Job Listings Section */
+.job-listings {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-listings h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .job-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .job-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .job-card button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .job-card button:hover {
+    background: #0056b3;
+  }
+  
+  /* Resume Upload Section */
+  .resume-upload {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-upload h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .resume-upload form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .resume-upload .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .resume-upload label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .resume-upload input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .resume-upload button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .resume-upload button:hover {
+    background: #218838;
+  }
+  
+  /* Salary Benchmarking Tool */
+  .salary-benchmarking {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .salary-benchmarking h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .salary-chart {
+    text-align: center;
+  }
+  
+  .salary-chart img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* AI Resume Analyzer Section */
+  .resume-analyzer {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-analyzer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .analyzer-placeholder {
+    text-align: center;
+  }
+  
+  .analyzer-placeholder p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .analyzer-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* Microloan Opportunities Section */
+.microloan-opportunities {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .microloan-opportunities h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .microloan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .microloan-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .microloan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .microloan-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .microloan-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .microloan-card button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .microloan-card button:hover {
+    background: #0056b3;
+  }
+  
+  /* Investment Opportunities Section */
+  .investment-opportunities {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investment-opportunities h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .investment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .investment-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .investment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investment-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .investment-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .investment-card button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .investment-card button:hover {
+    background: #218838;
+  }
+  
+  /* Loan Application Form */
+  .loan-application {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loan-application h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .loan-application form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .loan-application .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .loan-application label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .loan-application input,
+  .loan-application textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .loan-application button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .loan-application button:hover {
+    background: #0056b3;
+  }
+  
+  /* Investment Calculator */
+  .investment-calculator {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investment-calculator h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  .investment-calculator .calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .investment-calculator .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .investment-calculator label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .investment-calculator input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .investment-calculator button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .investment-calculator button:hover {
+    background: #218838;
+  }
+  
+  .investment-calculator .result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  .apply-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .apply-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  .financial-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #007bff;
+  }
+  
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .topic-card {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topic-card h2 {
+    color: #333;
+  }
+  
+  .get-started {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .get-started:hover {
+    background: #0056b3;
+  }
+  
+  
+
+
+  .content-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #007bff;
+  }
+  
+  ul {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+
+
+
+  .chat-container {
+    width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+  

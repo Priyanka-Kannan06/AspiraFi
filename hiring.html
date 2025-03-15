@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AspiraFi - Hiring & Salary Transparency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar (Same as Dashboard) -->
+    <aside class="sidebar">
+      <div class="logo">AspiraFi</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="wallet.html"><i class="fas fa-wallet"></i> Wallet</a></li>
+          <li><a href="#"><i class="fas fa-chart-line"></i> Investments</a></li>
+          <li><a href="#"><i class="fas fa-briefcase"></i> Jobs</a></li>
+          <li><a href="sponsorship.html"><i class="fas fa-hand-holding-usd"></i> Sponsorships</a></li>
+          <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Job Listings Section -->
+      <section class="job-listings">
+        <h2>Job Listings</h2>
+        <div class="jobs-grid">
+          <div class="job-card">
+            <h3>Software Engineer</h3>
+            <p><strong>Company:</strong> TechCorp</p>
+            <p><strong>Location:</strong> Remote</p>
+            <p><strong>Salary:</strong> 80,000 - 100,000</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+
+          </div>
+          <div class="job-card">
+            <h3>Data Analyst</h3>
+            <p><strong>Company:</strong> DataWorks</p>
+            <p><strong>Location:</strong> OMR</p>
+            <p><strong>Salary:</strong> 70,000 - 90,000</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+
+          </div>
+          <div class="job-card">
+            <h3>Marketing Manager</h3>
+            <p><strong>Company:</strong> MarketPro</p>
+            <p><strong>Location:</strong> IIT Madras</p>
+            <p><strong>Salary:</strong> 90,000 - 120,000</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Upload Section -->
+<section class="resume-upload">
+  <h2>Upload Your Resume</h2>
+  <form id="resume-form">
+    <div class="form-group">
+      <label for="resume">Choose File</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    </div>
+    <button type="submit">Analyze Resume</button>
+  </form>
+  <div id="ats-result" class="hidden">
+    <h3>ATS Score</h3>
+    <p><strong>Score:</strong> <span id="ats-score">0</span>/100</p>
+    <p><strong>Feedback:</strong> <span id="ats-feedback"></span></p>
+  </div>
+</section>
+
+      <!-- Salary Benchmarking Tool -->
+      <section class="salary-benchmarking">
+        <h2>Salary Benchmarking Tool</h2>
+        <div class="salary-chart">
+          <img src="https://via.placeholder.com/600x300" alt="Salary Chart Placeholder">
+        </div>
+      </section>
+
+      <!-- AI Resume Analyzer Section -->
+      <section class="resume-analyzer">
+        <h2>AI-Powered Resume Analyzer</h2>
+        <div class="analyzer-placeholder">
+          <p>Upload your resume to get personalized feedback and tips.</p>
+          <img src="https://via.placeholder.com/400x200" alt="AI Resume Analyzer Placeholder">
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+<script>
+  document.getElementById('resume-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const fileInput = document.getElementById('resume');
+    const file = fileInput.files[0];
+
+    if (!file) {
+      alert('Please upload a resume file.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('resume', file);
+
+    try {
+      const response = await fetch('/api/analyze-resume', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        document.getElementById('ats-score').textContent = result.score;
+        document.getElementById('ats-feedback').textContent = result.feedback;
+        document.getElementById('ats-result').classList.remove('hidden');
+      } else {
+        alert(result.message || 'Failed to analyze resume.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again.');
+    }
+  });
+</script>

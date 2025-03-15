@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgeting - AspiraFi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>💰 Budgeting</h1>
+    <p>Understand how to create and maintain a budget to control your expenses.</p>
+  </header>
+  
+  <section class="budget-calculator">
+    <h2>Budget Calculator</h2>
+    <label for="income">Enter Your Monthly Income:</label>
+    <input type="number" id="income" placeholder="Enter amount" required>
+    
+    <label for="expenses">Enter Your Monthly Expenses:</label>
+    <input type="number" id="expenses" placeholder="Enter amount" required>
+    
+    <button onclick="calculateBudget()">Calculate</button>
+    
+    <h3>Result:</h3>
+    <p id="result"></p>
+    <p id="advice"></p>
+  </section>
+  
+  <script>
+    function calculateBudget() {
+      const income = parseFloat(document.getElementById('income').value);
+      const expenses = parseFloat(document.getElementById('expenses').value);
+      const resultElement = document.getElementById('result');
+      const adviceElement = document.getElementById('advice');
+      
+      if (isNaN(income) || isNaN(expenses)) {
+        resultElement.textContent = "Please enter valid numbers for both fields.";
+        adviceElement.textContent = "";
+        return;
+      }
+      
+      const savings = income - expenses;
+      resultElement.textContent = `Your savings: $${savings}`;
+      
+      if (savings > 0) {
+        adviceElement.textContent = "Great job! Consider investing your savings.";
+      } else if (savings === 0) {
+        adviceElement.textContent = "You're breaking even. Try cutting unnecessary expenses.";
+      } else {
+        adviceElement.textContent = "You're overspending! Review your budget and reduce expenses.";
+      }
+    }
+  </script>
+</body>
+</html>
